@@ -1,0 +1,280 @@
+
+  header
+{
+   text-align: center;
+   background-image: url(../images/fon2.jpg);
+   height: 230px;
+   background-repeat: no-repeat;
+   background-color: #020305;
+   background-size: cover;
+   color :aliceblue;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+}
+nav
+{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    margin: 0;
+    height: 100px;
+}
+nav:first
+{
+    flex-grow: 5;
+}
+.cl ul
+{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    padding: 20px 200px;
+}
+.cl
+{
+    list-style: none;
+    text-align: right;
+    flex-grow: 1;
+}
+.cl li
+{
+    display: inline-block;
+    padding: 20px 20px 10px 40px;
+}
+.cl li:before
+{
+    content: "| ";
+    font-size: 20px;
+    color:rgb(193, 82, 226);
+}
+.cl a
+{   
+    color :aliceblue;
+    text-decoration: none;
+    font-size: 17px;
+}
+.cl a:hover
+{
+    text-decoration: underline;
+}
+  body
+  {
+      font-family: "Bona Nova";
+  }
+  footer
+  {
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      background-color: black;
+      color: white;
+  }
+  footer div
+  {
+    flex-grow: 1;
+  }
+  footer p
+  {
+      flex-grow: 1;
+      text-align: right;
+  }
+  .block
+  { 
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .block-text
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .block-color
+  {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    min-height: 250px;
+  }
+  .myc
+  {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .allris
+  {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .yslugi
+  {
+    display:flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  .yslugi-head
+  {
+    padding-left: 20px;
+  }
+  .wrapper
+  {
+      display: flex;
+      min-height: 200px;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: black;
+      color: white;
+      align-items: center;
+  }
+  .wrappertext
+  {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .wrapper-head
+  {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .cont
+  {
+      max-width: 200px;
+      text-align: center;
+  }
+  .cont-bottom
+  {
+      padding-left: 95px;
+  }
+  .allcont
+  {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .cont-syte
+  {
+      width: 300px;
+      height: 150px;
+      border: 1px solid rgb(84, 198, 243);
+      box-shadow: 0 0 10px 5px rgb(123, 161, 177);
+  }
+  .contemail
+  {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(84, 198, 243);
+    box-shadow: 0 0 10px 5px rgb(123, 161, 177);
+  }
+  .conttel
+  {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(84, 198, 243);
+    box-shadow: 0 0 10px 5px rgb(123, 161, 177);
+  }
+  .megablock
+  {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-right: 10px;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-direction: row;
+    color:black;
+  }
+  .block1
+  {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: left;
+  }
+  .block2
+  {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .megablock2
+  {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 10px;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-direction: row;
+    color:black;
+  }
+  .blockh
+  {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: left;
+  }
+  .blockt
+  {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+  .megablock3
+  {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-right: 10px;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-direction: row;
+    color:black;
+  }
+  .blockh3
+  {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: left;
+  }
+  .blockt3
+  {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .up
+  {
+    background: black;
+    color: white;
+  }
+.b
+{
+  background: rgb(134, 167, 187);
+}
+
+  

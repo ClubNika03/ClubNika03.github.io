@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canvass.css">
+    <script src="cokkies.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body onload="getCookie('cookie');" class = "b">
+    <h1 class = "h">Gallary</h1>
+    <div class = "gallary">
+        <a href = "../images/11f.jpg" data-lightbox="mygallary"><img src="../images/1f.jpg"></a>
+        <a href = "../images/12f.jpg" data-lightbox="mygallary"><img src="../images/2f.jpg"></a>
+        <a href = "../images/13f.jpg" data-lightbox="mygallary"><img src="../images/3f.jpg"></a>
+        <a href = "../images/14f.jpg" data-lightbox="mygallary"><img src="../images/4f.jpg"></a>
+    </div>
+    <style>
+        .h
+        {
+            text-align: center;
+        }
+        .gallary
+        {
+            margin: 10px 50px;
+        }
+        .gallary img
+        {
+            transition: 1s;
+            padding: 15px;
+            width: 200px;
+        }
+        .gallary img:hover
+        {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+    </style>
+    <h2>
+        Диаграмма
+    </h2>
+    <div>
+        <input id="count">
+        <button id="canvasButton">Построить диаграмму</button>
+        <canvas  class = "c" id="canvas" width="500" height="200"></canvas> 
+    </div>
+    <style>
+        .c
+        {
+            display: flex;
+            flex-direction: column;
+            border:5px solid #000000;
+        }
+    </style>
+    <article>
+        <h1>Cookies</h1>
+        <div class="test-inline-center">
+            <input type="text" id="ttt">
+        </div>
+        <input value = "Сохранить" type="button" onclick="setCookie('cookie', {path: '/','max-age': 3600});">
+        <input value = "Удалить" type="button" onclick="deleteCookie('cookie');">
+    </article>
+    <div>
+        <h2>
+            LocalStorage
+        </h2>
+        <div id="LocalStorage"></div>
+        <input id="but" type="button" value="Изменить цвет"></input>
+    </div>
+    <style>
+    #LocalStorage
+    {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(201, 56, 46);
+    }
+    </style>
+    <h2>
+        Drag'n'Drop
+    </h2>
+    <div>
+        <div class="kor">
+            <img src="../images/11f.jpg" alt="city1" id="first" draggable="true">
+        
+            <img src="../images/12f.jpg" alt="city2" id="second" draggable="true">
+        </div>
+        <div id="korsina"> 
+        </div>
+    </div>
+    <style>
+.kor
+{
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+}
+#first, #second
+{
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+#korsina
+{
+    border: 1px solid #000000;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    width: 360px;
+    height: 30px;
+}
+    </style>
+    <h1 class="h1">Grid</h1>
+    <form>
+
+        <div class = "main">
+        <div class = "blok1">
+        <label>Как Вам удобно получить ответ?</label><br>
+        <label><input type="radio"> по почте</label><br>
+        <label><input type="radio"> по телефону</label><br>
+        </div>
+        
+        <div class = "blok2">
+        <label>Укажите тему вопроса:</label>
+        <select>
+        <option>работа</option>
+        <option>сотрудничество</option>
+        <option>личный вопрос</option>
+        </select>
+        </div>
+        
+        <div class = "blok3">
+        <label>И еще один вопрос?</label><br>
+        <label><input type="checkbox">может так</label><br>
+        <label><input type="checkbox">или не так</label><br>
+        <label><input type="checkbox">иначе</label>
+        </div>
+        
+        <div class = "blok4">
+        <label>Ваше имя</label>
+        </div>
+        
+        <div class = "blok5">
+        <input type="text">
+        </div>
+        
+        <div class = "blok6">
+        <label>E-mail</label>
+        </div>
+        
+        <div class = "blok7">
+        <input type="email">
+        </div>
+        
+        <div class = "blok8">
+        <label>Телефон</label>
+        </div>
+        
+        <div class = "blok9">
+        <input type="tel">
+        </div>
+        
+        <div class = "blok10">
+        <label>Ваш вопрос:</label><br>
+        <textarea id="comment" cols="40" rows="5"></textarea>
+        </div>
+        
+        <div class = "blok11">
+            <input type="button" id="addButton"  value="Отправить">
+        </div>
+        
+        </div>
+        
+    </form>
+    <style>
+        .main
+        {
+        display: grid;
+        margin: 10px auto;
+        width: 450px;
+        height: 650px;
+        grid-template-areas:
+        "area0 area0"
+        "area1 area1"
+        "area2 area2"
+        "area3 area3"
+        "area4 area5"
+        "area6 area7"
+        "area8 area9"
+        "area10 area10"
+        "area11 area11";
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 10px 40px rgba(0, 0, 0, 0.63);
+        background: white;
+        color: black;
+        border-radius: 35px;
+        }
+        
+        form input
+        {
+        padding: 4px 10px;
+        border-radius: 5px;
+        }
+        
+        form select
+        {
+        padding: 4px 10px ;
+        border-radius: 5px;
+        }
+        
+        form textarea
+        {
+        border-radius: 5px;
+        }
+        
+        .blok1
+        {
+        grid-area: area1;
+        margin-left: 60px;
+        }
+        
+        .blok2
+        {
+        grid-area: area2;
+        margin-left: 60px;
+        }
+        
+        .blok3
+        {
+        grid-area: area3;
+        margin-left: 60px;
+        }
+        
+        .blok4
+        {
+        grid-area: area4;
+        margin-left: 60px;
+        }
+        
+        .blok5
+        {
+        grid-area: area5;
+        }
+        
+        .blok6
+        {
+        grid-area: area6;
+        margin-left: 60px;
+        }
+        
+        .blok7
+        {
+        grid-area: area7;
+        }
+        
+        .blok8
+        {
+        grid-area: area8;
+        margin-left: 60px;
+        }
+        
+        .blok9
+        {
+        grid-area: area9;
+        }
+        
+        .blok10
+        {
+        grid-area: area10;
+        margin-left: 60px;
+        }
+        
+        .blok11
+        {
+        grid-area: area11;
+        margin: 0 auto;
+        }
+        .h1
+        {
+            text-align: center;
+        }
+    </style>
+    <script>
+    window.onload = init;
+    
+    function init(){
+        var button = document.getElementById("addButton")
+        button.onclick = handleButtonClick;
+    }
+    
+    function handleButtonClick() {
+        var textInput = document.getElementById("comment");
+        var Name = textInput.value;
+        alert(Name);
+    }
+    </script>
+
+</body>
+<script src="canvas.js"></script>
+<script src="dragdrop.js"></script>
+<script src="local.js"></script>
+<script src="local.js"></script>
+</html>

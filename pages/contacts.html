@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id = "all">
+    <header>
+        <nav>
+            <a href="./myself.html"><img src="../images/logo1.png" alt="Дубна" width="100"></a>
+        <ul class = "cl">
+            <li><a href="./myself.html">О себе</a></li>
+            <li><a href="./resume.html">Резюме</a></li>
+            <li><a href="./competation.html">Компетенции</a></li>
+            <li><a href="./portfolio.html">Портфолио</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+        </nav>
+        <h1>Веб-технологии</h1>
+        <h3>Университет "Дубна"</h3>
+    </header>  
+    <article>
+        <div class = "allcont">
+            <div class="cont-syte">
+                <h2>Я в социальных сетях:</h2>
+                <img src="../images/2.png" alt="ВК" width="50">
+                <img src="../images/3.png" alt="Инстаграм" width="50">
+                <img src="../images/4.png" alt="ГитХаб" width="50">
+            </div>
+            <div class = "contemail">
+            <h2>Почта:</h2>
+            <p>nika12-03@mail.ru</p>
+            </div>
+            <div class = "conttel">
+                <h2>Телефон:</h2>
+                <p>+7 928-982-30-12</p>
+            </div>
+        </div> 
+        <form action="mailto: nika12-03@mail.ru" enctype="text/plain"> 
+ 
+            <fieldset class = "cont"> 
+                <legend>Есть вопрос?</legend> 
+                <div> 
+                    <label for="name">Имя</label> 
+                    <input type="text" id="name"> 
+                </div> 
+                <div> 
+                    <label for="email">E-mail</label> 
+                    <input type="email" id="email"> 
+                </div> 
+                <div> 
+                    <label for="tel">Телефон</label> 
+                    <input type="tel" id="tel"> 
+ 
+                </div> 
+                <div> 
+                    <label for="answer">Как Вам удобно получить ответ?</label><br> 
+                    <label for="radio_mail"><input type="radio" id="radio_mail"> по почте</label> 
+                      
+                    <label for="radio_tel"><input type="radio" id="radio_tel"> по телефону</label> 
+                     
+                </div> 
+                <div> 
+                    <label for="theme">Укажите тему вопроса:</label> 
+                    <select id="theme"> 
+                        <option>работа</option> 
+                        <option>сотрудничество</option> 
+                        <option>личный вопрос</option> 
+                    </select> 
+                </div> 
+                <div> 
+                    <label for="message">Ваш вопрос:</label><br> 
+                    <textarea id="message" cols="30" rows="5"></textarea> 
+                </div> 
+            </fieldset> 
+ 
+            <p class = "cont-bottom"><input type="submit" value="Отправить"></p> 
+ 
+        </form>
+ 
+    </article>
+    <style>
+        .colortheme
+        {
+            background: white;
+            color: black;
+        }
+    </style>
+    <footer>
+        <div>
+            <img src="../images/2.png" alt="ВК" width="50">
+            <img src="../images/3.png" alt="Инстаграм" width="50">
+            <img src="../images/4.png" alt="ГитХаб" width="50">
+        </div>
+        <button
+        onclick = "document.getElementById('all').classList.toggle('colortheme');">Переключить тему</button>
+        <p>Cайт разработан ФИ, Copyright © 2021</p>
+    </footer>
+</body>
+</html>

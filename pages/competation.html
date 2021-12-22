@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id = "all">
+    <header>
+        <nav>
+            <a href="./myself.html"><img src="../images/logo1.png" alt="Дубна" width="100"></a>
+            <ul class = "cl">
+                <li><a href="./myself.html">О себе</a></li>
+                <li><a href="./resume.html">Резюме</a></li>
+                <li><a href="./competation.html">Компетенции</a></li>
+                <li><a href="./portfolio.html">Портфолио</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1>Веб-технологии</h1>
+        <h3>Университет "Дубна"</h3>
+    </header>
+    <article>   
+            <div class = "block-color">
+                <div class = "block">
+                    <div class = "block-text">
+                        <h1>Заголовок</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis non voluptatibus, iste tenetur tempora molestiae, itaque praesentium recusandae vitae minima quaerat, temporibus quos cupiditate soluta aut magnam natus doloremque?</p>
+                    </div>
+                    <div>
+                        <img src="../images/5.png" alt="Картинки" height="130">
+                    </div>
+                </div>
+            </div>
+        
+            <div class = "Mycom">
+                    <div class="myc">
+                        <h2>Мои компетенции</h2>
+                    </div>
+                <div class ="allris">
+                    <div>
+                        <img src="../images/6.png" alt="Figma" width="100">
+                        <p>подпись к рисунку</p>
+                    </div>
+                    <div>
+                        <img src="../images/7.png" alt="Иконка" width="100">
+                        <p>подпись к рисунку</p>
+                    </div>
+                    <div>
+                        <img src="../images/8.png" alt="Иконка" width="100">
+                        <p>подпись к рисунку</p>
+                    </div>
+                    <div>
+                        <img src="../images/9.png" alt="Иконка" width="100">
+                        <p>подпись к рисунку</p>
+                    </div> 
+                </div> 
+            </div> 
+    
+        <div class = "wrapper">
+            <div class = "wrappertext" id = "text">
+                <div>
+                    <h2>Заголовок</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis inventore, soluta amet nostrum dolores sunt earum doloribus ab quas culpa, qui explicabo? Tenetur praesentium sequi soluta repellendus, minus voluptatibus.</p>
+            </div>            
+            <div> 
+                <button id = "hide"
+                onclick="document.getElementById('text').style.display='none'; 
+                document.getElementById('hide').style.display='none'; 
+                document.getElementById('open').style.display='block';">Скрыть</button>
+                <button id = "open"
+                onclick=" document.getElementById('text').style.display='block'; 
+                document.getElementById('hide').style.display='block'; 
+                document.getElementById('open').style.display='none';" 
+                style="display:none;">Показать</button>
+            </div>
+        </div>
+   
+        <div>
+            <div class="yslugi-head">
+            <h2>Услуги</h2>
+        </div>
+        <div class = "yslugi">
+            <ul>
+            <div>
+                <li>Проработка игровых интерфейсов и анимации</li>
+                <li>Подготовка логотипа, гайдлайнов бренда и иконок</li>
+                <li>Подготовка интерфейсов для продуктов, связанных с виртуальной реальностью</li>
+                <li>Интерфейсы для интернет-магазинов, порталов новостей, интернет-сервисов, аналитических платформ</li>
+            </div>
+            </ul>
+            <ul>
+            <div>
+                <li>Разработка UI/UX дизайна</li>
+                <li>Создадим яркую дизайн концепцию для любого продукта или сервиса</li>
+                <li>Умные посадочные страницы спроектированные по передовому подходу SEO Driven</li>
+                <li>Создаем умные шаблоны для любых макетов. Шаблоны для социальных сетей, презентаций и генеративный фирменный стиль.</li>
+            </div>
+            </ul>
+        </div>
+        </div>
+        
+    </article>
+<style>
+    .colortheme
+    {
+        background: white;
+        color: black;
+    }
+</style>
+    <footer>
+        <div>
+            <img src="../images/2.png" alt="ВК" width="50">
+            <img src="../images/3.png" alt="Инстаграм" width="50">
+            <img src="../images/4.png" alt="ГитХаб" width="50">
+        </div>
+        <button
+        onclick = "document.getElementById('all').classList.toggle('colortheme');">Переключить тему</button>
+        <p>Cайт разработан ФИ, Copyright © 2021</p>
+    </footer>
+</body>
+
+</html>

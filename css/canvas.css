@@ -1,0 +1,17 @@
+.margin-top{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dark-button
+{
+    display: inline-block;
+    margin: 10px auto;
+    border: 2px solid #eee;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+#canvas{
+    border: 2px solid #3f3f3f;
+}
